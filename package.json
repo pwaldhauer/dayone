@@ -1,7 +1,7 @@
 {
   "name": "dayone",
   "version": "0.0.1",
-  "description": "Create entries in your Day One journal",
+  "description": "NodeJS Module to create, list and remove Day One Journal entries",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
