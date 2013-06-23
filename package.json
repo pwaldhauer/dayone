@@ -1,0 +1,32 @@
+{
+  "name": "dayone",
+  "version": "0.0.1",
+  "description": "Create entries in your Day One journal",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "dependencies": {
+    "path-extra": "*",
+    "moment": "*",
+    "hat": "*",
+    "plist": "*"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pwaldhauer/dayone.git"
+  },
+  "keywords": [
+    "day one"
+  ],
+  "author": {
+    "name": "Philipp Waldhauer",
+    "email": "ich@philippwaldhauer.de",
+    "url": "http://knuspermagier.de"
+  },
+
+  "license": "MIT"
+}

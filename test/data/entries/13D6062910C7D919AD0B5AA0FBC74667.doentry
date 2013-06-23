@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Creation Date</key>
+    <date>2013-04-01T22:00:00Z</date>
+    <key>Starred</key>
+    <false/>
+    <key>Time Zone</key>
+    <string>Europe/Berlin</string>
+    <key>UUID</key>
+    <string>13D6062910C7D919AD0B5AA0FBC74667</string>
+    <key>Entry Text</key>
+    <string>TestText1</string>
+  </dict>
+</plist>
