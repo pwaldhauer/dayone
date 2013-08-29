@@ -26,7 +26,7 @@ dayone.save(entry, function(error) {
 })
 ```
 
-Optionally `DayOne()` accepts an object containing a `directory` that should point to the Day One Journal directory. If omitted it will use the iCloud documents directory by default.
+Optionally `DayOne()` accepts an object containing a `directory` that should point to the Day One Journal directory. If omitted it will use the iCloud documents directory by default. If it doesn't find the iCloud directory, it will use the Dropbox Application directory.
 
 For more usage examples take a look at the tests or [Elizabeth](https://github.com/pwaldhauer/elizabeth), my script to export your Moves.app data, which uses this module. Surprise!
 
