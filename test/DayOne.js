@@ -23,11 +23,11 @@ describe('DayOne', function() {
             });
         });
 
-        it('should list all entries matching the tag', function(done) {
+        it('should list all entries matching the tags', function(done) {
             var day1 = new DayOne(mockConfig);
 
             day1.list({
-                tag: 'test'
+                tags: ['test']
             }, function(error, entries) {
                 assert.equal(entries.length, 1, 'One entries');
                 assert.equal(entries[0].tags.indexOf('test'), 0, 'Needs to include tag test');
