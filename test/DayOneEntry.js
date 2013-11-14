@@ -17,6 +17,11 @@ describe('DayOneEntry', function() {
             entry.starred = true;
             entry.creationDate = new Date(1371940000000);
             entry.timezone = 'Europe/Paris';
+            entry.music = {
+                Album: 'AM',
+                Artist: 'Arctic Monkeys',
+                Track: 'Do I Wanna Know?'
+            };
 
             var outPlist = entry.toOutputFormat();
 
@@ -28,6 +33,7 @@ describe('DayOneEntry', function() {
             assert.equal(parsed['Starred'], entry.starred);
             assert.equal(parsed['Creation Date'].getTime(), entry.creationDate.getTime());
             assert.equal(parsed['Time Zone'], entry.timezone);
+            assert.deepEqual(parsed['Music'], entry.music);
 
             done();
         });
