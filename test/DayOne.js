@@ -29,7 +29,7 @@ describe('DayOne', function() {
             day1.list({
                 tags: ['test']
             }, function(error, entries) {
-                assert.equal(entries.length, 1, 'One entries');
+                assert.equal(entries.length, 1, 'One entry');
                 assert.equal(entries[0].tags.indexOf('test'), 0, 'Needs to include tag test');
                 assert.equal(entries[0].text, 'TaggedEntry', 'Only the tagged entry');
 
