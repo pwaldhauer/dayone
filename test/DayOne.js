@@ -17,7 +17,7 @@ describe('DayOne', function() {
             var day1 = new DayOne(mockConfig);
 
             day1.list(function(error, entries) {
-                assert.equal(entries.length, 2, 'Two entries');
+                assert.equal(entries.length, 3, 'Three entries');
 
                 done();
             });
@@ -29,14 +29,42 @@ describe('DayOne', function() {
             day1.list({
                 tags: ['test']
             }, function(error, entries) {
-                assert.equal(entries.length, 1, 'One entries');
+                assert.equal(entries.length, 1, 'One entry');
                 assert.equal(entries[0].tags.indexOf('test'), 0, 'Needs to include tag test');
                 assert.equal(entries[0].text, 'TaggedEntry', 'Only the tagged entry');
 
                 done();
             });
-        })
+        });
 
+        it('should list all entries matching the starred option', function(done) {
+            var day1 = new DayOne(mockConfig);
+
+            day1.list({
+              starred: false
+            }, function(error, entries) {
+                assert.equal(entries.length, 2, 'Two entries');
+                assert.equal(entries[0].starred, false, 'Matches the starred option');
+
+                done();
+            });
+        });
+
+        it('should list all entries matching the starred option and the tags', function(done) {
+            var day1 = new DayOne(mockConfig);
+
+            day1.list({
+              starred: true,
+              tags: ['othertag']
+            }, function(error, entries) {
+                assert.equal(entries.length, 1, 'One entry');
+                assert.equal(entries[0].tags.indexOf('othertag'), 0, 'Needs to include tag othertag');
+                assert.equal(entries[0].starred, true, 'Matches the starred option');
+                assert.equal(entries[0].text, 'Tagged and starred entry', 'Matched the only tagged and starred entry');
+
+                done();
+            });
+        });
     });
 
     describe('#save', function() {
