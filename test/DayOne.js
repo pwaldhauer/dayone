@@ -112,6 +112,7 @@ describe('DayOne', function() {
             entry.photo = new Buffer(fs.readFileSync(path.join(__dirname, 'data', 'test.jpg')));
 
             day1.save(entry, function(error) {
+                assert.equal(error, null, 'Error should be null');
                 day1.remove(entry.UUID, function(error) {
                     assert.equal(error, null, 'Error should be null');
                     done();
