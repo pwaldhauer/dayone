@@ -60,7 +60,7 @@ describe('DayOne', function() {
                 assert.equal(entries.length, 1, 'One entry');
                 assert.equal(entries[0].tags.indexOf('othertag'), 0, 'Needs to include tag othertag');
                 assert.equal(entries[0].starred, true, 'Matches the starred option');
-                assert.equal(entries[0].text, true, 'Tagged and starred entry');
+                assert.equal(entries[0].text, 'Tagged and starred entry', 'Matched the only tagged and starred entry');
 
                 done();
             });
