@@ -7,10 +7,10 @@
     "test": "mocha --reporter spec"
   },
   "dependencies": {
-    "path-extra": "*",
-    "moment": "*",
-    "hat": "*",
-    "plist": "*"
+    "path-extra": "0.2.1",
+    "moment": "2.8.1",
+    "hat": "0.0.3",
+    "plist": "1.0.1"
   },
   "devDependencies": {
     "mocha": "*"
