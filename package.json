@@ -1,6 +1,6 @@
 {
   "name": "dayone",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "NodeJS Module to create, list and remove Day One Journal entries",
   "main": "index.js",
   "scripts": {
