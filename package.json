@@ -7,10 +7,10 @@
     "test": "mocha --reporter spec"
   },
   "dependencies": {
-    "path-extra": "0.2.1",
-    "moment": "2.8.1",
     "hat": "0.0.3",
-    "plist": "1.0.1"
+    "moment": "2.8.1",
+    "path-extra": "0.2.1",
+    "plist": "^1.2.0"
   },
   "devDependencies": {
     "mocha": "*"
@@ -27,6 +27,5 @@
     "email": "ich@philippwaldhauer.de",
     "url": "http://knuspermagier.de"
   },
-
   "license": "MIT"
 }
